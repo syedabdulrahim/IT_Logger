@@ -1,0 +1,37 @@
+{
+
+    "logs":[
+        
+        {
+            "id":1,
+            "message":"Changed Hard-Drive on workstation 045",
+            "attention":false,
+            "date":"02-10-2020",
+            "tech":"Sam Smith"
+
+    },
+    
+    {
+            "id":2,
+            "message":"Workstation 007 not posting",
+            "attention":true,
+            "date":"02-11-2020",
+            "tech":"Abdul"
+
+    },
+
+
+    {
+            "id":3,
+            "message":"Changed Memory on workstation 050",
+            "attention":true,
+            "date":"02-11-2020",
+            "tech":"Rahim"
+
+    }
+],
+
+    "techs":[
+
+    ]
+}
