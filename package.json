@@ -6,6 +6,7 @@
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
+    "materialize-css": "^1.0.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-scripts": "4.0.0",
@@ -16,8 +17,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "json-server":"json-server --watch db.json --port 5000",
-    "dev":"concurrently \"npm run start\" \"npm run json-server\""
+    "json-server": "json-server --watch db.json --port 5000",
+    "dev": "concurrently \"npm run start\" \"npm run json-server\""
   },
   "eslintConfig": {
     "extends": [
@@ -41,5 +42,5 @@
     "concurrently": "^5.3.0",
     "json-server": "^0.16.2"
   },
-  "proxy":"http://localhost:5000"
+  "proxy": "http://localhost:5000"
 }
