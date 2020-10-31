@@ -1,6 +1,4 @@
 import React,{useEffect} from 'react';
-import SearchBar from '../src/components/layout/SearchBar';
-import Logs from '../src/components/logs/Logs';
 // import logo from './logo.svg';
 import './App.css';
 import 'materialize-css/dist/css/materialize.min.css';
@@ -16,12 +14,7 @@ const App=()=> {
   },[])
 
   return(
-    <React.Fragment>
-        <SearchBar></SearchBar>
-        <div className="container">
-          <Logs/>
-        </div>
-    </React.Fragment>
+    <div>Hello</div>
   );
 
 
