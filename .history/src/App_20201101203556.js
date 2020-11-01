@@ -22,7 +22,6 @@ const App=()=> {
         <SearchBar></SearchBar>
         <div className="container">
           <AddBtn></AddBtn>
-          <AddLogModal></AddLogModal>
           <Logs/>
         </div>
     </React.Fragment>
