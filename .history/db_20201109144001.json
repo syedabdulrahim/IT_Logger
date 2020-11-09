@@ -1,0 +1,71 @@
+{
+  "logs": [
+    {
+      "id": 1,
+      "message": "Changed Hard-Drive on workstation 045",
+      "attention": false,
+      "date": "02-01-2020",
+      "tech": "Sam Smith"
+    },
+    {
+      "id": 2,
+      "message": "Workstation 007 not posting",
+      "attention": true,
+      "date": "02-01-2020",
+      "tech": "Abdul Rahim"
+    },
+    {
+      "id": 3,
+      "message": "Changed Memory on workstation 050",
+      "attention": true,
+      "date": "02-03-2019",
+      "tech": "Rahim Syed"
+    },
+    {
+      "message": "Changed Hard-Drive on workstation 045",
+      "attention": false,
+      "date": "02-01-2020",
+      "tech": "Sam Smith",
+      "id": 4
+    },
+    {
+      "id": 5
+    },
+    {
+      "id": 6
+    },
+    {
+      "id": 7
+    },
+    {
+      "id": 8
+    },
+    {
+      "message": "Changed Hard-Drive on workstation 045",
+      "attention": false,
+      "date": "02-01-2020",
+      "tech": "Sam Smith",
+      "id": 9
+    }
+
+
+
+  ],
+  "techs": [
+    {
+      "id": 1,
+      "firstName": "Sam",
+      "lastName": "Smith"
+    },
+    {
+      "id": 2,
+      "firstName": "Abdul",
+      "lastName": "Rahim"
+    },
+    {
+      "id": 3,
+      "firstName": "Rahim",
+      "lastName": "Syed"
+    }
+  ]
+}
