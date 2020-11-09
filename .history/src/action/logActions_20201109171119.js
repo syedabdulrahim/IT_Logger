@@ -132,7 +132,7 @@ export const updateLog=(log)=> async dispatch=>{
 
    
     try {
-        
+        dispatch(setLoading());
 
     const res=await fetch(`/logs/${log.id}`,{
         method:'PUT',

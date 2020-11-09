@@ -64,11 +64,9 @@ export default (state=initialState,action)=>{
             }
 
             case SET_CURRENT:
-                // console.log(action)
                 return{
                     ...state,
-                    current:action.payload,
-                    loading:false
+                    current:action.payload
                 }
 
 
@@ -83,7 +81,6 @@ export default (state=initialState,action)=>{
                         return{
                             ...state,
                             logs:state.logs.map((log)=>log.id==action.payload.id?action.payload:log)
-                            
                         }
                 
         

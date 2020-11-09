@@ -52,8 +52,8 @@ const EditLogModal = (props) => {
 
             console.log(props.currentLog.message)
             setMessage(props.currentLog.message);
-            setAttention(props.currentLog.attention);
-            setTech(props.currentLog.tech);
+            setAttention(props.currentLog.attention)
+            setTech(props.currentLog.tech)
         }
         console.log("hello")
 

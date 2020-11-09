@@ -12,11 +12,9 @@ const EditLogModal = (props) => {
     const onSubmit=()=>{
 
         // console.log(message,attention,tech);
-        if(message==='' || tech===''){
-            M.toast({html:"Please enter details"})
-        }
+       
 
-        else{
+   
               //clear fileds
                 const updtedLog={
 
@@ -32,12 +30,13 @@ const EditLogModal = (props) => {
 
                 props.updateLog(updtedLog);
                 M.toast({
-                    html:`Log Updated by `
+                    html:`Log Updated by ${props.currentLog.tech}`
                 })
+
               setMessage('');
               setAttention('false');
               setTech('')
-        }
+        
     }
 
 
@@ -53,7 +52,7 @@ const EditLogModal = (props) => {
             console.log(props.currentLog.message)
             setMessage(props.currentLog.message);
             setAttention(props.currentLog.attention);
-            setTech(props.currentLog.tech);
+            setTech(props.currentLog.tech)
         }
         console.log("hello")
 

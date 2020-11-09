@@ -28,12 +28,7 @@ const EditLogModal = (props) => {
 
                 }
 
-
-
-                props.updateLog(updtedLog);
-                M.toast({
-                    html:`Log Updated by `
-                })
+                props.updateLog(updtedLog)
               setMessage('');
               setAttention('false');
               setTech('')
@@ -52,8 +47,7 @@ const EditLogModal = (props) => {
 
             console.log(props.currentLog.message)
             setMessage(props.currentLog.message);
-            setAttention(props.currentLog.attention);
-            setTech(props.currentLog.tech);
+            setAttention(props.currentLog.attention)
         }
         console.log("hello")
 

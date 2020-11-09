@@ -1,5 +1,4 @@
 // import { setLoading } from '../action/logActions';
-// import { setCurrent } from '../action/logActions';
 import {SET_LOADING,
     GET_LOGS,
     LOGS_ERROR,
@@ -62,30 +61,6 @@ export default (state=initialState,action)=>{
                 error:action.payload,
                 loading:false
             }
-
-            case SET_CURRENT:
-                // console.log(action)
-                return{
-                    ...state,
-                    current:action.payload,
-                    loading:false
-                }
-
-
-                case CLEAR_CURRENT:
-
-                    return{
-                        ...state,
-                        current:null
-                    }
-
-                    case UPDATE_LOG:
-                        return{
-                            ...state,
-                            logs:state.logs.map((log)=>log.id==action.payload.id?action.payload:log)
-                            
-                        }
-                
         
 
 

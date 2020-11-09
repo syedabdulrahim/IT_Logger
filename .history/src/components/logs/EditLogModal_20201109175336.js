@@ -6,34 +6,24 @@ import {updateLog} from '../../action/logActions';
 const EditLogModal = (props) => {
 
 
-  
+    useEffect(()=>{
+       
+        if(props.currentLog){
+            setMessage(props.currentLog.message);
+        }
+
+    },[props.currentLog])
 
 
     const onSubmit=()=>{
 
-        // console.log(message,attention,tech);
+        console.log(message,attention,tech);
         if(message==='' || tech===''){
             M.toast({html:"Please enter details"})
         }
 
         else{
               //clear fileds
-                const updtedLog={
-
-                    id:props.currentLog.id,
-                    message,
-                    attention,
-                    tech,
-                    date:new Date()
-
-                }
-
-
-
-                props.updateLog(updtedLog);
-                M.toast({
-                    html:`Log Updated by `
-                })
               setMessage('');
               setAttention('false');
               setTech('')
@@ -46,20 +36,6 @@ const EditLogModal = (props) => {
     const [tech,setTech]=useState('');
 
 
-    useEffect(()=>{
-       
-        if(props.currentLog){
-
-            console.log(props.currentLog.message)
-            setMessage(props.currentLog.message);
-            setAttention(props.currentLog.attention);
-            setTech(props.currentLog.tech);
-        }
-        console.log("hello")
-
-    },[props.currentLog])
-
-
     return (
         <div id="edit-log-modal" className="modal" style={modalStyle}>
             <div className="modal-content">
@@ -67,7 +43,7 @@ const EditLogModal = (props) => {
                 <div className="row">
                     <div className="input-field">
                         <input type="text" name="message" value={message} onChange={(event)=>{setMessage(event.target.value)}}></input>
-                        
+                        <label htmlFor="message" className="active">Log Message</label>
                     </div>
 
                 </div>
@@ -112,7 +88,7 @@ const modalStyle={
 const mapStateToProps=(state)=>{
 
     return{
-        currentLog:state.log.current
+        currentLog:state.current
     }
 
     
