@@ -1,0 +1,40 @@
+{
+  "logs": [
+    {
+      "id": 3,
+      "message": "testdssss",
+      "attention": "false",
+      "tech": "Syed",
+      "date": "2020-11-09T17:39:46.832Z"
+    },
+    {
+      "id": 4,
+      "message": "tesyysssss",
+      "attention": false,
+      "tech": "Abdul",
+      "date": "2020-11-09T17:39:18.380Z"
+    }
+  ],
+  "techs": [
+    {
+      "id": 1,
+      "firstName": "Sam",
+      "lastName": "Smith"
+    },
+    {
+      "id": 2,
+      "firstName": "Abdul",
+      "lastName": "Rahim"
+    },
+    {
+      "id": 3,
+      "firstName": "Rahim",
+      "lastName": "Syed"
+    },
+    {
+      "id": 4,
+      "firstName": "Mahesh",
+      "lastName": "Babu"
+    }
+  ]
+}
